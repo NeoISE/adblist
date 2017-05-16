@@ -8,3 +8,5 @@
 ! Viki.com
 !   Annoying Anti-AdBlock
 viki.com##.vkp-anti-ab
+!   Browser Support Modal
+viki.com###browser-support-container
