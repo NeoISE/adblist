@@ -1,0 +1,10 @@
+! Maniroth Ouk's Adblocking List
+!
+! Summary: Covers everything that matters to me.
+!
+! Disclaimer: I will only use this with uBlock Origin, so no real guarentees
+!   outside of this.
+
+! Viki.com
+!   Annoying Anti-AdBlock
+viki.com##.vkp-anti-ab
