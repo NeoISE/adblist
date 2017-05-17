@@ -10,3 +10,7 @@
 viki.com##.vkp-anti-ab
 !   Browser Support Modal
 viki.com###browser-support-container
+
+! adf.ly
+adf.ly###_bd
+adf.ly###fade
