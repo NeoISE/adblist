@@ -1,4 +1,10 @@
-! Maniroth Ouk's Adblocking List
+[Adblock Plus 2.0]
+! Title: Maniroth Ouk's Adblocking List
+! Author: Maniroth Ouk (NeoISE)
+! Version: 201709150512
+! Last modified: September 15, 2017 5:12 UTC
+! Expires: 3 days
+! Homepage: https://github.com/NeoISE/adblist
 !
 ! Summary: Covers everything that matters to me.
 !
