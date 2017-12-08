@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201709150517
-! Last modified: September 15, 2017 5:17 UTC
+! Version: 201712082307
+! Last modified: 2017-12-08 23:07 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -12,9 +12,10 @@
 !   outside of this.
 
 ! Viki.com
-!   Annoying Anti-AdBlock
 viki.com##.vkp-anti-ab
-!   Browser Support Modal
 viki.com###browser-support-container
+viki.com##.modal-backdrop
+viki.com###modal-backdrop
+
 ! Hulkpop.com
 @@||hulkpop.com^$generichide
