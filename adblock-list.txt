@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201712082307
-! Last modified: 2017-12-08 23:07 UTC
+! Version: 201712090000
+! Last modified: 2017-12-09 00:00 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -19,3 +19,4 @@ viki.com###modal-backdrop
 
 ! Hulkpop.com
 @@||hulkpop.com^$generichide
+hulkpop.com##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
