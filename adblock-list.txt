@@ -11,25 +11,25 @@
 ! Disclaimer: I will only use this with uBlock Origin, so no real guarentees
 !   outside of this.
 
-! Viki.com
+! -&- Viki.com -&-
 viki.com##.vkp-anti-ab
 viki.com###browser-support-container
 viki.com##.modal-backdrop
 viki.com###modal-backdrop
 
-! Hulkpop
+! -&- Hulkpop.* -&-
 !@@||hulkpop.com^$generichide
 hulkpop.*##script:inject(setInterval-defuser.js)
 hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 
-! Generic
+! -&- Generic filters -&-
 /\w+\.bid\//$third-party
 /adtrue*$first-party,script
 ||tmearn.com^$third-party
 ##[href^="http://pokerkiu.org/"]
 ##[href^="http://pialaqq.net/"]
 
-! Bad (Verbatim) Domains
+! -&- Bad Domains (Verbatim) -&-
 ||5dabf928ad9ad4.com^$important
 ||45f2373b26b8e2.com^$important
 ||stats.mydramalist.com^$important
