@@ -1,7 +1,7 @@
 # Title: Maniroth Ouk's Hosts Blacklist
 # Author: Maniroth Ouk (NeoISE)
-# Version: 201712172306
-# Last modified: 2017-12-17 23:06 UTC
+# Version: 201801030026
+# Last modified: 2018-01-03 00:26 UTC
 # Homepage: https://github.com/NeoISE/adblist
 #
 # Summary: Contains just the "Bad Domains" to block from `adblock-list.txt`.
@@ -12,3 +12,6 @@ stats.mydramalist.com
 adloft.net
 pokerkiu.org
 pialaqq.net
+ads.2mdnsys.com
+3l4r8d61yz.com
+39d1d397c97730.com

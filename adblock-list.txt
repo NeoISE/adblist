@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201712301824
-! Last modified: 2017-12-30 18:24 UTC
+! Version: 201801030026
+! Last modified: 2018-01-03 00:26 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -29,9 +29,13 @@ hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 ##[href^="http://pokerkiu.org/"]
 ##[href^="http://pialaqq.net/"]
 ##div#vplayer div[class^="vjs-overlay"]
+||static.2mdnsys.com^$domain=~2mdnsys.com
 
 ! -&- Bad Domains (Verbatim) -&-
 ||5dabf928ad9ad4.com^$important
 ||45f2373b26b8e2.com^$important
 ||stats.mydramalist.com^$important
 ||adloft.net^$important
+||ads.2mdnsys.com^$important
+||3l4r8d61yz.com^$important
+||39d1d397c97730.com^$important
