@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201801050551
-! Last modified: 2018-01-05 05:51 UTC
+! Version: 201801052216
+! Last modified: 2018-01-05 22:16 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -11,13 +11,13 @@
 ! Disclaimer: I will only use this with uBlock Origin, so no real guarentees
 !   outside of this.
 
-! -&- Viki.com -&-
+! -&- Specific filters -&-
 viki.com##.vkp-anti-ab
 viki.com###browser-support-container
 viki.com##.modal-backdrop
 viki.com###modal-backdrop
 
-! -&- Hulkpop.* -&-
+
 hulkpop.*##script:inject(setInterval-defuser.js, t((e.opacity==0),o), 1000)
 hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 hulkpop.*##script:inject(abort-on-property-write.js, document.oncontextmenu)
@@ -30,6 +30,13 @@ hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onkeydown)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onmousedown)
 
+
+mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; background-color: #E9EAED !important)
+mydramalist.com##div[class^="spnsr"]:not([class="spnsr-wrapper"]):style(height: 0.5em !important; margin: 0.25em auto !important)
+mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin: 0px auto !important)
+||mydramalist.com/assets/img/blank_spnsr*$first-party,image,redirect=1x1-transparent.png
+
+
 ! -&- Generic filters -&-
 ||bid^$third-party
 /adtrue*$first-party,script
@@ -38,6 +45,7 @@ hulkpop.*##script:inject(abort-on-property-write.js, document.onmousedown)
 ##[href^="http://pialaqq.net/"]
 ##div#vplayer div[class^="vjs-overlay"]
 ||static.2mdnsys.com^$domain=~2mdnsys.com
+
 
 ! -&- Bad Domains (Verbatim) -&-
 ||5dabf928ad9ad4.com^$important
