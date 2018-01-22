@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201801210236
-! Last modified: 2018-01-21 02:36 UTC
+! Version: 201801220531
+! Last modified: 2018-01-22 05:31 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -62,3 +62,4 @@ howtogeek.com##.overlay-inner
 ||3l4r8d61yz.com^$important
 ||39d1d397c97730.com^$important
 ||logger.viki.io^$important
+||ads.urban-media.com^$important

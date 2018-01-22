@@ -1,7 +1,7 @@
 # Title: Maniroth Ouk's Hosts Blacklist
 # Author: Maniroth Ouk (NeoISE)
-# Version: 201801160018
-# Last modified: 2018-01-16 00:18 UTC
+# Version: 201801220531
+# Last modified: 2018-01-22 05:31 UTC
 # Homepage: https://github.com/NeoISE/adblist
 #
 # Summary: Contains just the "Bad Domains" to block from `adblock-list.txt`.
@@ -16,3 +16,4 @@ ads.2mdnsys.com
 3l4r8d61yz.com
 39d1d397c97730.com
 logger.viki.io
+ads.urban-media.com
