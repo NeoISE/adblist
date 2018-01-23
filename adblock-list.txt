@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201801230500
-! Last modified: 2018-01-23 05:00 UTC
+! Version: 201801230636
+! Last modified: 2018-01-23 06:36 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -58,6 +58,8 @@ youtube.com##div:has-text(Try YouTube TV for free)
 ##[href^="http://pialaqq.net/"]
 ##div#vplayer div[class^="vjs-overlay"]
 ||static.2mdnsys.com^$domain=~2mdnsys.com
+##a[href^="//5dabf928ad9ad4.com"]
+##a[href^="https://5dabf928ad9ad4.com"]
 
 
 ! -&- Bad Domains (Verbatim) -&-
