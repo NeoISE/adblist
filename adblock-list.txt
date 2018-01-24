@@ -19,7 +19,6 @@ viki.com###modal-backdrop
 ! Stops ad-breaks
 viki.com##script:inject(setInterval-defuser.js, e._checkBait, 50)
 
-
 hulkpop.*##script:inject(setInterval-defuser.js, t((e.opacity==0),o), 1000)
 hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 hulkpop.*##script:inject(abort-on-property-write.js, document.oncontextmenu)
@@ -32,23 +31,18 @@ hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onkeydown)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onmousedown)
 
-
 mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; background-color: #E9EAED !important)
 mydramalist.com##div[class^="spnsr"]:not([class="spnsr-wrapper"]):style(height: 0.5em !important; margin: 0.25em auto !important)
 mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin: 0px auto !important)
 ||mydramalist.com/assets/img/blank_spnsr*$first-party,image,redirect=1x1-transparent.png
 
-
 howtogeek.com##.email-overlay
 howtogeek.com##.overlay-inner
 
-
 chocolatey.org###package-disclaimer
-
 
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
-
 
 k2nblog.com##body > div:last-of-type
 
