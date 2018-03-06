@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201801240335
-! Last modified: 2018-01-24 03:35 UTC
+! Version: 201803062141
+! Last modified: 2018-03-06 21:41 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -44,7 +44,8 @@ chocolatey.org###package-disclaimer
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
 
-k2nblog.com##body > div:last-of-type
+! Needs to be fixed to be better targeted
+!k2nblog.com##body > div:last-of-type
 
 
 ! -&- Generic filters -&-
