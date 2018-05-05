@@ -1,8 +1,8 @@
 [uBlock Origin 1.14.20]
 ! Title: Maniroth Ouk's Adblocking List
 ! Author: Maniroth Ouk (NeoISE)
-! Version: 201803062159
-! Last modified: 2018-03-06 21:59 UTC
+! Version: 201805050523
+! Last modified: 2018-05-05 05:23 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 !
@@ -59,6 +59,10 @@ youtube.com##div:has-text(Try YouTube TV for free)
 ##a[href^="//5dabf928ad9ad4.com"]
 ##a[href^="https://5dabf928ad9ad4.com"]
 ##[class*=AcceptableAds]
+##[class^="ss_ad_center"]
+###banner_ad
+//bidgear\d+\./
+/adtrue720x90*
 
 
 ! -&- Bad Domains (Verbatim) -&-
@@ -73,6 +77,5 @@ youtube.com##div:has-text(Try YouTube TV for free)
 ||ads.urban-media.com^$important
 ||jeyuhcbagxbp.com^$important
 ||lnelcbntwru.com^$important
-
-! possibly a phising site ?
-!||appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca^$important
+||appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca^$important
+||platform.bidgear.com^$important
