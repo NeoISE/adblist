@@ -1,8 +1,8 @@
-[uBlock Origin 1.14.20]
+[uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201805050523
-! Last modified: 2018-05-05 05:23 UTC
+! Version: 201805202259
+! Last modified: 2018-05-20 22:59 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -19,7 +19,8 @@
 viki.com##.vkp-anti-ab
 viki.com###browser-support-container
 viki.com##.modal-backdrop
-viki.com###modal-backdrop
+viki.com##.vp-no-ads
+viki.com##.license-plate-ads
 ! Stops ad-breaks
 viki.com##script:inject(setInterval-defuser.js, e._checkBait, 50)
 
@@ -28,8 +29,8 @@ hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 hulkpop.*##script:inject(abort-on-property-write.js, document.oncontextmenu)
 hulkpop.*##script:inject(abort-on-property-read.js, document.ondragstart)
 
-! Should prevent the copy protected stuff (currently for FF 57+ only)
-!hulkpop.*##^script:has-text(show_wpcp_message)
+! Should prevent the copy protected stuff (currently for FF 58+ only)
+hulkpop.*##^script:has-text(show_wpcp_message)
 ! The following should work otherwise
 hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onkeydown)
@@ -39,11 +40,6 @@ mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; backgroun
 mydramalist.com##div[class^="spnsr"]:not([class="spnsr-wrapper"]):style(height: 0.5em !important; margin: 0.25em auto !important)
 mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin: 0px auto !important)
 ||mydramalist.com/assets/img/blank_spnsr*$first-party,image,redirect=1x1-transparent.png
-
-howtogeek.com##.email-overlay
-howtogeek.com##.overlay-inner
-
-chocolatey.org###package-disclaimer
 
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
