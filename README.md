@@ -24,9 +24,11 @@ as such, there are many rules/filters that are **uBO** specific and there are no
 
 ## Summary
 Contains rules/filters that targets:
+
 1. ads (by blocking or corrected cosmetically),
 2. anti-adblock behaviors and,
 3. _small annoyances_ (like overlays and popups)
+
 along with protection from some potentially _bad_ domains (those that deliver ads, tracks you, or is just "phishy").
 
 The list *adblock-list.txt* is intended for use in uBO (or any other ad-blocker that may or may not support all of the uBO static filter syntax).
