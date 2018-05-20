@@ -1,15 +1,19 @@
 [uBlock Origin 1.14.20]
-! Title: Maniroth Ouk's Adblocking List
-! Author: Maniroth Ouk (NeoISE)
+! Title: NeoISE's Filters
+! Author: NeoISE (Maniroth Ouk)
 ! Version: 201803062159
 ! Last modified: 2018-03-06 21:59 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
+! Support: https://github.com/NeoISE/adblist/issues
 !
-! Summary: Covers everything that matters to me.
+! Contains rules/filters that targets:
+!    1. ads (by blocking or corrected cosmetically),
+!    2. anti-adblock behaviors and,
+!    3. annoyances (like overlays and popups)
+! along with protection from some potentially bad domains (those that deliver
+! ads, tracks you, or is just "phishy").
 !
-! Disclaimer: I will only use this with uBlock Origin, so no real guarentees
-!   outside of this.
 
 ! -&- Specific filters -&-
 viki.com##.vkp-anti-ab

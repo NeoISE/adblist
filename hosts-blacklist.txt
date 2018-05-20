@@ -1,10 +1,12 @@
-# Title: Maniroth Ouk's Hosts Blacklist
-# Author: Maniroth Ouk (NeoISE)
+# Title: NeoISE's Hosts Blacklist
+# Author: NeoISE (Maniroth Ouk)
 # Version: 201803062159
 # Last modified: 2018-03-06 21:59 UTC
 # Homepage: https://github.com/NeoISE/adblist
+# Support: https://github.com/NeoISE/adblist/issues
 #
-# Summary: Contains just the "Bad Domains" to block from `adblock-list.txt`.
+# Contains domains that are considered to be potentially dangerous either as
+# possible phishing/fake sites or as ads (or trackers) sources.
 
 5dabf928ad9ad4.com
 45f2373b26b8e2.com
