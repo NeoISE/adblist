@@ -8,19 +8,21 @@ as such, there are many rules/filters that are **uBO** specific and there are no
 
 ## Requirements
 - ![uBlock Origin](https://github.com/gorhill/uBlock) (Of Course!) or any other ad-block.
-- This filters list is a companion to (supplements) the following lists:
-  * uBlock filters (including **Annoyances**, **Badware risks**, **Privacy**, **Resource abuse**, **Unbreak**)
-  * Adblock Warning Removal List
-  * Adguard Filters (inc. **Base**, **Spyware**, **Annoyance List**)
-  * EasyList _and_ EasyPrivacy
-  * Fanboy's Lists (inc. **Enhanced Tracking**, **Annoyance**)
-  * Spam404, Malware Domain List
-  * ![AakList](https://github.com/reek/anti-adblock-killer/)
-  * ![Adware filters](https://easylist-downloads.adblockplus.org/adwarefilters.txt)
-  * ![Privacy filters](https://github.com/metaphoricgirrafe/tracking-filters)
-  * ![uBlock Filters +](https://github.com/IDKwhattoputhere/uBlock-Filters-Plus)
-  * ![Nano Defender List](https://jspenguin2017.github.io/uBlockProtector)
-  * ![Overlay Blocker](https://github.com/LordBadmintonofYorkshire/Overlay-Blocker)
+- This filters list is **Highly Recommended** to be a *companion* to (to supplement) the following lists combined (rather than to be used solo):
+  + By default, found in **uBO**:
+	* uBlock filters (including **Annoyances**, **Badware risks**, **Privacy**, **Resource abuse**, **Unbreak**)
+	* Adblock Warning Removal List
+	* Adguard Filters (inc. **Base**, **Spyware**, **Annoyance List**)
+	* EasyList _and_ EasyPrivacy
+	* Fanboy's Lists (inc. **Enhanced Tracking**, **Annoyance**)
+	* Spam404, Malware Domain List
+  + Found outside of **uBO**:
+	* ![AakList](https://github.com/reek/anti-adblock-killer/)
+	* ![Adware filters](https://easylist-downloads.adblockplus.org/adwarefilters.txt)
+	* ![Privacy filters](https://github.com/metaphoricgirrafe/tracking-filters)
+	* ![uBlock Filters +](https://github.com/IDKwhattoputhere/uBlock-Filters-Plus)
+	* ![Nano Defender List](https://jspenguin2017.github.io/uBlockProtector)
+	* ![Overlay Blocker](https://github.com/LordBadmintonofYorkshire/Overlay-Blocker)
 
 ## Summary
 Contains rules/filters that targets:
