@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201805212139
-! Last modified: 2018-05-21 21:39 UTC
+! Version: 201805212227
+! Last modified: 2018-05-21 22:27 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -36,10 +36,12 @@ hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onkeydown)
 hulkpop.*##script:inject(abort-on-property-write.js, document.onmousedown)
 
+mydramalist.com##.vip-info
 mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; background-color: #E9EAED !important)
 mydramalist.com##div[class^="spnsr"]:not([class="spnsr-wrapper"]):style(height: 0.5em !important; margin: 0.25em auto !important)
 mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin: 0px auto !important)
-||mydramalist.com/assets/img/blank_spnsr*$first-party,image,redirect=1x1-transparent.png
+||mydramalist.com/assets/img/blank_spnsr*$first-party,image,redirect=1x1-transparent.gif
+||mydramalist.com/assets/img/spnsr-text-*$first-party,image,redirect=1x1-transparent.gif
 
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
