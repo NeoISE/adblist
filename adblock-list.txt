@@ -29,7 +29,8 @@ hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
 hulkpop.*##script:inject(abort-on-property-write.js, document.oncontextmenu)
 hulkpop.*##script:inject(abort-on-property-read.js, document.ondragstart)
 
-! Should prevent the copy protected stuff (currently for FF 58+ only)
+! Should prevent a overlay from showing when highlighting text or even clicking down on kb
+! Works currently for FF 58+ only
 hulkpop.*##^script:has-text(show_wpcp_message)
 ! The following should work otherwise
 hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
@@ -50,10 +51,10 @@ youtube.com##div:has-text(Try YouTube TV for free)
 !k2nblog.com##body > div:last-of-type
 
 ! https://gitlab.com/xuhaiyang1234/AAK-Cont/issues/340
-! The following two applies when the images are not blocked (i.e. will work if the "||gelbooru.com^$first-party,image,badfilter" is used)
+! The following two rules applies (block ads) when images from the domain are not blocked
 gelbooru.com##^script:has-text(fuckingnormieswryyY.AddZone)
 gelbooru.com##a[href*="buymyshit.moneygrubbingwhore.com"]
-! The following two applies when the images are blocked
+! The following two rules applies when *all* images are blocked
 ! Enable Thumbnails
 @@||simg3.gelbooru.com/thumbnails^$image
 ! Enable Image
