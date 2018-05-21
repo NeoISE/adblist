@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201805202259
-! Last modified: 2018-05-20 22:59 UTC
+! Version: 201805211728
+! Last modified: 2018-05-21 17:28 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -46,6 +46,17 @@ youtube.com##div:has-text(Try YouTube TV for free)
 
 ! Needs to be fixed to be better targeted
 !k2nblog.com##body > div:last-of-type
+
+! https://gitlab.com/xuhaiyang1234/AAK-Cont/issues/340
+! The following two applies when the images are not blocked (i.e. will work if the "||gelbooru.com^$first-party,image,badfilter" is used)
+gelbooru.com##^script:has-text(fuckingnormieswryyY.AddZone)
+gelbooru.com##a[href*="buymyshit.moneygrubbingwhore.com"]
+! The following two applies when the images are blocked
+! Enable Thumbnails
+@@||simg3.gelbooru.com/thumbnails^$image
+! Enable Image
+@@||simg3.gelbooru.com//samples^$first-party,image
+@@||simg3.gelbooru.com//images^$first-party,image
 
 
 ! -&- Generic filters -&-
