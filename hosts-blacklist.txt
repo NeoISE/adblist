@@ -1,7 +1,7 @@
 # Title: NeoISE's Hosts Blacklist
 # Author: NeoISE (Maniroth Ouk)
-# Version: 201805212139
-# Last modified: 2018-05-21 21:39 UTC
+# Version: 201805270325
+# Last modified: 2018-05-27 03:25 UTC
 # Homepage: https://github.com/NeoISE/adblist
 # Support: https://github.com/NeoISE/adblist/issues
 #
@@ -24,3 +24,4 @@ lnelcbntwru.com
 appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca
 platform.bidgear.com
 6af461b907c5b.com
+zap.in

@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201805212227
-! Last modified: 2018-05-21 22:27 UTC
+! Version: 201805270325
+! Last modified: 2018-05-27 03:25 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -47,19 +47,24 @@ mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
 
-! Needs to be fixed to be better targeted
-!k2nblog.com##body > div:last-of-type
-
 ! https://gitlab.com/xuhaiyang1234/AAK-Cont/issues/340
 ! The following two rules applies (block ads) when images from the domain are not blocked
-gelbooru.com##^script:has-text(fuckingnormieswryyY.AddZone)
+gelbooru.com##^script:has-text(/(fuckingnormieswryyY|BetterJsPop)\./i)
 gelbooru.com##a[href*="buymyshit.moneygrubbingwhore.com"]
 ! The following two rules applies when *all* images are blocked
 ! Enable Thumbnails
-@@||simg3.gelbooru.com/thumbnails^$image
+@@||simg3.gelbooru.com/thumbnails^$image,~third-party
 ! Enable Image
-@@||simg3.gelbooru.com//samples^$first-party,image
-@@||simg3.gelbooru.com//images^$first-party,image
+@@||simg3.gelbooru.com//samples^$image,~third-party
+@@||simg3.gelbooru.com//images^$image,~third-party
+
+allkpop.com###shop_widget_right
+
+rawlh.com##.float-ck
+rawlh.com##.col-md-4:has(#lg)
+
+||ww2.corneey.com^$popup
+||ww2.corneey.com^$script
 
 
 ! -&- Generic filters -&-
@@ -94,3 +99,4 @@ gelbooru.com##a[href*="buymyshit.moneygrubbingwhore.com"]
 ||appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca^$important
 ||platform.bidgear.com^$important
 ||6af461b907c5b.com^$important
+||zap.in^$important
