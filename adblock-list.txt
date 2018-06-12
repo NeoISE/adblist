@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201805300412
-! Last modified: 2018-05-30 04:12 UTC
+! Version: 201806120301
+! Last modified: 2018-06-12 03:01 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -105,3 +105,4 @@ cyberlink.com##.product_mainv4
 ||6af461b907c5b.com^$important
 ||zap.in^$important
 ||webed.dm.gg^$important
+||30b9e3a7d7e2b.com^$important
