@@ -1,7 +1,7 @@
 # Title: NeoISE's Hosts Blacklist
 # Author: NeoISE (Maniroth Ouk)
-# Version: 201806120301
-# Last modified: 2018-06-12 03:01 UTC
+# Version: 201806120604
+# Last modified: 2018-06-12 06:04 UTC
 # Homepage: https://github.com/NeoISE/adblist
 # Support: https://github.com/NeoISE/adblist/issues
 #
@@ -27,3 +27,6 @@ platform.bidgear.com
 zap.in
 webed.dm.gg
 30b9e3a7d7e2b.com
+1298bab69bbc4.com
+ads.dogusdigital.com
+dogus-ads-cdn.dygdigital.com

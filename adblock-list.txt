@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201806120301
-! Last modified: 2018-06-12 03:01 UTC
+! Version: 201806120604
+! Last modified: 2018-06-12 06:04 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -21,6 +21,7 @@ viki.com###browser-support-container
 viki.com##.modal-backdrop
 viki.com##.vp-no-ads
 viki.com##.license-plate-ads
+viki.com##.video-overlay
 ! Stops ad-breaks
 viki.com##script:inject(setInterval-defuser.js, e._checkBait, 50)
 
@@ -69,6 +70,10 @@ rawlh.com##.col-md-4:has(#lg)
 cyberlink.com##.follow
 cyberlink.com##.product_mainv4
 
+dramafever.com##div[ng-if*="shouldServeAd()"]
+
+accuweather.com###offers
+
 
 ! -&- Generic filters -&-
 ||bid^$third-party
@@ -86,6 +91,12 @@ cyberlink.com##.product_mainv4
 //bidgear\d+\./
 /adtrue720x90*
 /tracker/async^$script
+##.ads-outsite
+##.ads_place
+##.below_ads
+##[class^="ads_above_"]
+###tracking-pixels
+dogus-ads-
 
 
 ! -&- Bad Domains (Verbatim) -&-
@@ -106,3 +117,6 @@ cyberlink.com##.product_mainv4
 ||zap.in^$important
 ||webed.dm.gg^$important
 ||30b9e3a7d7e2b.com^$important
+||1298bab69bbc4.com^$important
+||ads.dogusdigital.com^$important
+||dogus-ads-cdn.dygdigital.com^$important
