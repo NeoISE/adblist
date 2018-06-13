@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201806132202
-! Last modified: 2018-06-13 22:02 UTC
+! Version: 201806132210
+! Last modified: 2018-06-13 22:10 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -77,6 +77,8 @@ accuweather.com###offers
 @@||smetrics.bestbuy.com/b/ss/$script,domain=bestbuy.com
 
 k2nblog.com##.td-a-rec
+k2nblog.com##.wpgdprc-consent-bar
+k2nblog.com###wpgdprc-consent-modal
 
 
 ! -&- Generic filters -&-
@@ -101,8 +103,6 @@ k2nblog.com##.td-a-rec
 ##[class^="ads_above_"]
 ###tracking-pixels
 dogus-ads-
-##.wpgdprc-consent-bar
-###wpgdprc-consent-modal
 
 
 ! -&- Bad Domains (Verbatim) -&-
