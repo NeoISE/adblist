@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201806120604
-! Last modified: 2018-06-12 06:04 UTC
+! Version: 201806132121
+! Last modified: 2018-06-13 21:21 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -73,6 +73,8 @@ cyberlink.com##.product_mainv4
 dramafever.com##div[ng-if*="shouldServeAd()"]
 
 accuweather.com###offers
+
+@@||smetrics.bestbuy.com/b/ss/$script,domain=bestbuy.com
 
 
 ! -&- Generic filters -&-
