@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201806210020
-! Last modified: 2018-06-21 00:20 UTC
+! Version: 201806210638
+! Last modified: 2018-06-21 06:38 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -82,6 +82,14 @@ k2nblog.com###wpgdprc-consent-modal
 
 ||animenova.*/frontend/all.js$script
 animenova.*##script:inject(abort-current-inline-script.js, beacon)
+
+! https://github.com/reek/anti-adblock-killer/issues/4092
+overclockers.ru##script:inject(setTimeout-defuser.js, (), 15000)
+
+! Blocks popups
+||estream.*/script.js^$script
+
+openload.*,*###adbdetect
 
 
 ! -&- Generic filters -&-
