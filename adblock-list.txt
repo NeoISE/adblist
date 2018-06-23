@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201806232206
-! Last modified: 2018-06-23 22:06 UTC
+! Version: 201806232243
+! Last modified: 2018-06-23 22:43 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -22,6 +22,9 @@ viki.com##.modal-backdrop
 viki.com##.vp-no-ads
 viki.com##.license-plate-ads
 viki.com##.video-overlay
+viki.com##[id|="div-gpt-ad"]
+viki.com###pencil_ad
+||colvk.viki.io/*counter$domain=viki.com
 ! Stops ad-breaks
 viki.com##script:inject(setInterval-defuser.js, e._checkBait, 50)
 
