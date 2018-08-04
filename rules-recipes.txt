@@ -1,0 +1,42 @@
+! Title: NeoISE's Ruleset Recipes for uMatrix
+! Maintainer: NeoISE
+! Version: 201808042030
+! Last Modified: 2018-08-04 20:30 UTC
+
+Stack Overflow
+	stackoverflow.com *
+		_ 1st-party script
+		_ ajax.googleapis.com *
+		_ ajax.googleapis.com script
+		_ sstatic.net *
+		_ sstatic.net script
+		! Enables LaTeX
+		_ cloudflare.com *
+		_ cloudflare.com script
+
+! Could work as first party too
+OpenLoad (3rd-Party)
+	* openload.co
+		_ openload.co *
+		_ openload.co media
+		_ openload.co script
+		_ openload.co xhr
+		_ openload.co frame
+		_ oloadcdn.net *
+		_ oloadcdn.net media
+
+! Could work as first party too
+RapidVideo (3rd-Party)
+	* rapidvideo.com
+		_ rapidvideo.com *
+		_ www.rapidvideo.com frame
+		_ www.rapidvideo.com script
+		_ playercdn.net *
+		_ playercdn.net media
+
+Wikia (More Strict)
+	wikia.com *
+		! default uMatrix recipe enabled nocookie.net
+		! but we can do better and enable the subdomain wikia.nocookie.net
+		_ wikia.nocookie.net *
+		_ wikia.nocookie.net script
