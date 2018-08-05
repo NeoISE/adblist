@@ -1,8 +1,19 @@
 ! uMatrix: Ruleset recipes 1.0
 ! Title: NeoISE's Ruleset Recipes for uMatrix
 ! Maintainer: NeoISE
-! Version: 201808042030
-! Last Modified: 2018-08-04 20:30 UTC
+! Version: 201808050019
+! Last Modified: 2018-08-05 00:19 UTC
+
+! As stated from 'https://github.com/gorhill/uMatrix/wiki/Ruleset-recipes'
+! This should respect the following ruleset:
+!         <Region>
+!                 * * block
+!                 * * script block
+!                 * * frame block
+!                 * first-party * allow
+!                 * first-party frame allow
+!         </Region>
+! Basically: "all 3rd-party resources are blocked, all scripts (1st- and 3rd-party) are blocked, and all 3rd-party frames are explicitly blocked"
 
 Stack Overflow
 	stackoverflow.com *
@@ -30,6 +41,7 @@ OpenLoad (3rd-Party)
 RapidVideo (3rd-Party)
 	* rapidvideo.com
 		_ rapidvideo.com *
+		_ www.rapidvideo.com *
 		_ www.rapidvideo.com frame
 		_ www.rapidvideo.com script
 		_ playercdn.net *
@@ -37,6 +49,7 @@ RapidVideo (3rd-Party)
 
 Wikia (More Strict)
 	wikia.com *
+		_ 1st-party script
 		! default uMatrix recipe enabled nocookie.net
 		! but we can do better and enable the subdomain wikia.nocookie.net
 		_ wikia.nocookie.net *
