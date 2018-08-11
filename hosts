@@ -1,0 +1,39 @@
+# NeoISE'S Hosts File
+#
+# This file is more tuned to be a hosts file than 'hosts-backlist.txt'
+# So for integration into a system's host file, this file will do the trick.
+#
+# Homepage: https://github.com/NeoISE/adblist
+# Support: https://github.com/NeoISE/adblist/issues
+#
+# Local
+#
+127.0.0.1	localhost
+::1		localhost
+#
+# START Blacklist
+#
+0.0.0.0	0.0.0.0	# Prevent association with other domain
+0.0.0.0	1298bab69bbc4.com
+0.0.0.0	30b9e3a7d7e2b.com
+0.0.0.0	39d1d397c97730.com
+0.0.0.0	3l4r8d61yz.com
+0.0.0.0	45f2373b26b8e2.com
+0.0.0.0	5dabf928ad9ad4.com
+0.0.0.0	6af461b907c5b.com
+0.0.0.0	adloft.net
+0.0.0.0	ads.2mdnsys.com
+0.0.0.0	ads.dogusdigital.com
+0.0.0.0	ads.urban-media.com
+0.0.0.0	appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca
+0.0.0.0	dogus-ads-cdn.dygdigital.com
+0.0.0.0	jeyuhcbagxbp.com
+0.0.0.0	lnelcbntwru.com
+0.0.0.0	logger.viki.io
+0.0.0.0	pialaqq.net
+0.0.0.0	platform.bidgear.com
+0.0.0.0	pokerkiu.org
+0.0.0.0	stats.mydramalist.com
+0.0.0.0	webed.dm.gg
+0.0.0.0	zap.in
+0.0.0.0	zukxd6fkxqn.com
