@@ -1,7 +1,7 @@
 # Title: NeoISE's Hosts Blacklist
 # Author: NeoISE (Maniroth Ouk)
-# Version: 201808042030
-# Last modified: 2018-08-04 20:30 UTC
+# Version: 201808220606
+# Last modified: 2018-08-22 06:06 UTC
 # Homepage: https://github.com/NeoISE/adblist
 # Support: https://github.com/NeoISE/adblist/issues
 #
@@ -31,3 +31,20 @@ webed.dm.gg
 ads.dogusdigital.com
 dogus-ads-cdn.dygdigital.com
 zukxd6fkxqn.com
+forexinstocks.xyz
+
+# Possibly Deceptive
+cheatsfreehere.com
+gamescheatcodes.co
+gamescheatsfree.com
+gemtrainer.com
+hackandroidiosgames.com
+hackdcheats.com
+hackgrena.de
+hackmygame.info
+hacksandcheatsfree.com
+hacksbycheats.com
+hacksiacheats.com
+kiwicheat.com
+lhcsolution.com
+progenz.com

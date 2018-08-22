@@ -10,10 +10,10 @@
 #
 127.0.0.1	localhost
 ::1		localhost
+0.0.0.0	0.0.0.0	# Prevent association with other domain
 #
 # START Blacklist
 #
-0.0.0.0	0.0.0.0	# Prevent association with other domain
 0.0.0.0	1298bab69bbc4.com
 0.0.0.0	30b9e3a7d7e2b.com
 0.0.0.0	39d1d397c97730.com
@@ -27,6 +27,7 @@
 0.0.0.0	ads.urban-media.com
 0.0.0.0	appleid.apple.com.form-client-id638a898fdd25b31ae5d126d38e94.ca
 0.0.0.0	dogus-ads-cdn.dygdigital.com
+0.0.0.0	forexinstocks.xyz
 0.0.0.0	jeyuhcbagxbp.com
 0.0.0.0	lnelcbntwru.com
 0.0.0.0	logger.viki.io
@@ -37,3 +38,19 @@
 0.0.0.0	webed.dm.gg
 0.0.0.0	zap.in
 0.0.0.0	zukxd6fkxqn.com
+
+# Possibly Deceptive
+0.0.0.0	cheatsfreehere.com
+0.0.0.0	gamescheatcodes.co
+0.0.0.0	gamescheatsfree.com
+0.0.0.0	gemtrainer.com
+0.0.0.0	hackandroidiosgames.com
+0.0.0.0	hackdcheats.com
+0.0.0.0	hackgrena.de
+0.0.0.0	hackmygame.info
+0.0.0.0	hacksandcheatsfree.com
+0.0.0.0	hacksbycheats.com
+0.0.0.0	hacksiacheats.com
+0.0.0.0	kiwicheat.com
+0.0.0.0	lhcsolution.com
+0.0.0.0	progenz.com

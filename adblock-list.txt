@@ -1,8 +1,8 @@
 [uBlock Origin 1.16.7.3]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201808042030
-! Last modified: 2018-08-04 20:30 UTC
+! Version: 201808220606
+! Last modified: 2018-08-22 06:06 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -109,6 +109,10 @@ myanimelist.net##.root
 ! Stops popunders
 nhentai.net##script:inject(addEventListener-defuser.js, DOMContentLoaded, N.advertising)
 
+@@||apple.com^$generichide
+
+rapidvideo.com##script:inject(set-constant.js, exitpopup, noopFunc)
+
 
 ! -&- Generic filters -&-
 ||bid^$third-party
@@ -157,3 +161,20 @@ dogus-ads-
 ||ads.dogusdigital.com^$important
 ||dogus-ads-cdn.dygdigital.com^$important
 ||zukxd6fkxqn.com^$important
+||forexinstocks.xyz^$important
+
+! Possibly Deceptive
+||cheatsfreehere.com^
+||gamescheatcodes.co^
+||gamescheatsfree.com^
+||gemtrainer.com^
+||hackandroidiosgames.com^
+||hackdcheats.com^
+||hackgrena.de^
+||hackmygame.info^
+||hacksandcheatsfree.com^
+||hacksbycheats.com^
+||hacksiacheats.com^
+||kiwicheat.com^
+||lhcsolution.com^
+||progenz.com^
