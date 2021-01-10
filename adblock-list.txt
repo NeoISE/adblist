@@ -1,8 +1,8 @@
-[uBlock Origin 1.16.7.3]
+[uBlock Origin 1.21.7.9]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 201808220606
-! Last modified: 2018-08-22 06:06 UTC
+! Version: 202101102257
+! Last modified: 2021-01-10 22:57 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -26,20 +26,20 @@ viki.com##[id|="div-gpt-ad"]
 viki.com###pencil_ad
 ||colvk.viki.io/*counter$domain=viki.com
 ! Stops ad-breaks
-viki.com##script:inject(setInterval-defuser.js, e._checkBait, 50)
+viki.com##+js(setInterval-defuser.js, e._checkBait, 50)
 
-hulkpop.*##script:inject(setInterval-defuser.js, t((e.opacity==0),o), 1000)
+hulkpop.*##+js(setInterval-defuser.js, t((e.opacity==0),o), 1000)
 hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
-hulkpop.*##script:inject(abort-on-property-write.js, document.oncontextmenu)
-hulkpop.*##script:inject(abort-on-property-read.js, document.ondragstart)
+hulkpop.*##+js(abort-on-property-write.js, document.oncontextmenu)
+hulkpop.*##+js(abort-on-property-read.js, document.ondragstart)
 
 ! Should prevent a overlay from showing when highlighting text or even clicking down on kb
 ! Works currently for FF 58+ only
 hulkpop.*##^script:has-text(show_wpcp_message)
 ! The following should work otherwise
-hulkpop.*##script:inject(abort-on-property-write.js, document.onselectstart)
-hulkpop.*##script:inject(abort-on-property-write.js, document.onkeydown)
-hulkpop.*##script:inject(abort-on-property-write.js, document.onmousedown)
+hulkpop.*##+js(abort-on-property-write.js, document.onselectstart)
+hulkpop.*##+js(abort-on-property-write.js, document.onkeydown)
+hulkpop.*##+js(abort-on-property-write.js, document.onmousedown)
 
 mydramalist.com##.vip-info
 mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; background-color: #E9EAED !important)
@@ -84,10 +84,10 @@ k2nblog.com##.wpgdprc-consent-bar
 k2nblog.com###wpgdprc-consent-modal
 
 ||animenova.*/frontend/all.js$script
-animenova.*##script:inject(abort-current-inline-script.js, beacon)
+animenova.*##+js(abort-current-inline-script.js, beacon)
 
 ! https://github.com/reek/anti-adblock-killer/issues/4092
-overclockers.ru##script:inject(setTimeout-defuser.js, (), 15000)
+overclockers.ru##+js(setTimeout-defuser.js, (), 15000)
 
 ! Blocks popups
 ||estream.*/script.js^$script
@@ -107,11 +107,11 @@ mangahere.*##.MHShuffleAd
 myanimelist.net##.root
 
 ! Stops popunders
-nhentai.net##script:inject(addEventListener-defuser.js, DOMContentLoaded, N.advertising)
+nhentai.net##+js(addEventListener-defuser.js, DOMContentLoaded, N.advertising)
 
 @@||apple.com^$generichide
 
-rapidvideo.com##script:inject(set-constant.js, exitpopup, noopFunc)
+rapidvideo.com##+js(set-constant.js, exitpopup, noopFunc)
 
 microsoft.com###email-newsletter-dialog
 
