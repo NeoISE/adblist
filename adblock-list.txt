@@ -113,6 +113,21 @@ nhentai.net##script:inject(addEventListener-defuser.js, DOMContentLoaded, N.adve
 
 rapidvideo.com##script:inject(set-constant.js, exitpopup, noopFunc)
 
+microsoft.com###email-newsletter-dialog
+
+newegg.com###popUpExitSurvey_Content
+newegg.com##.row-side-banners
+
+www.youtube.com##.ytd-popup-container:has(ytd-single-option-survey-renderer)
+
+wetv.vip##.txp-watermark
+wetv.vip##.play_dl_float
+wetv.vip##.fy_qc_btn
+
+! unbreak youtube channel icons
+||googleusercontent.com^$3p,badfilter
+||googleusercontent.com^$3p,domain=~youtube.com
+
 
 ! -&- Generic filters -&-
 ||bid^$third-party
