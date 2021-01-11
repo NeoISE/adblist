@@ -1,8 +1,8 @@
 [uBlock Origin 1.32.0]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 202101112115
-! Last modified: 2021-01-11 21:15 UTC
+! Version: 202101112205
+! Last modified: 2021-01-11 22:05 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -28,6 +28,7 @@ viki.com###pencil_ad
 ! Stops ad-breaks
 !viki.com##+js(setInterval-defuser.js, e._checkBait, 50)
 viki.com##+js(nosiif, e._checkBait, 50)
+viki.com###__next .signup-banner
 
 !hulkpop.*##+js(setInterval-defuser.js, t((e.opacity==0),o), 1000)
 hulkpop.*##+js(nosiif, t((e.opacity==0),o), 1000)
@@ -136,6 +137,13 @@ newegg.com##.row-side-banners
 wetv.vip##.txp-watermark
 wetv.vip##.play_dl_float
 wetv.vip##.fy_qc_btn
+wetv.vip##.download_top_btn
+
+mgtv.com##.m-agreement
+mgtv.com##.app-download
+
+iq.com###__next .popup-container
+iq.com##.qrcode-wrap
 
 
 ! -&- Generic filters -&-
