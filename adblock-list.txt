@@ -1,8 +1,8 @@
-[uBlock Origin 1.21.7.9]
+[uBlock Origin 1.32.0]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 202101102257
-! Last modified: 2021-01-10 22:57 UTC
+! Version: 202101112115
+! Last modified: 2021-01-11 21:15 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -26,20 +26,27 @@ viki.com##[id|="div-gpt-ad"]
 viki.com###pencil_ad
 ||colvk.viki.io/*counter$domain=viki.com
 ! Stops ad-breaks
-viki.com##+js(setInterval-defuser.js, e._checkBait, 50)
+!viki.com##+js(setInterval-defuser.js, e._checkBait, 50)
+viki.com##+js(nosiif, e._checkBait, 50)
 
-hulkpop.*##+js(setInterval-defuser.js, t((e.opacity==0),o), 1000)
+!hulkpop.*##+js(setInterval-defuser.js, t((e.opacity==0),o), 1000)
+hulkpop.*##+js(nosiif, t((e.opacity==0),o), 1000)
 hulkpop.*##aside[id^="text-"]:not([id$="text-8"]):not([id$="text-3"])
-hulkpop.*##+js(abort-on-property-write.js, document.oncontextmenu)
-hulkpop.*##+js(abort-on-property-read.js, document.ondragstart)
+!hulkpop.*##+js(abort-on-property-write.js, document.oncontextmenu)
+hulkpop.*##+js(aopw, document.oncontextmenu)
+!hulkpop.*##+js(abort-on-property-read.js, document.ondragstart)
+hulkpop.*##+js(aopr, document.ondragstart)
 
 ! Should prevent a overlay from showing when highlighting text or even clicking down on kb
 ! Works currently for FF 58+ only
 hulkpop.*##^script:has-text(show_wpcp_message)
 ! The following should work otherwise
-hulkpop.*##+js(abort-on-property-write.js, document.onselectstart)
-hulkpop.*##+js(abort-on-property-write.js, document.onkeydown)
-hulkpop.*##+js(abort-on-property-write.js, document.onmousedown)
+!hulkpop.*##+js(abort-on-property-write.js, document.onselectstart)
+hulkpop.*##+js(aopw, document.onselectstart)
+!hulkpop.*##+js(abort-on-property-write.js, document.onkeydown)
+hulkpop.*##+js(aopw, document.onkeydown)
+!hulkpop.*##+js(abort-on-property-write.js, document.onmousedown)
+hulkpop.*##+js(aopw, document.onmousedown)
 
 mydramalist.com##.vip-info
 mydramalist.com##div[class^="spnsr"]:style(min-height: 0px !important; background-color: #E9EAED !important)
@@ -50,6 +57,10 @@ mydramalist.com##div[class="spnsr-wrapper"]:style(height: 1em !important; margin
 
 youtube.com###yt-banner-promo-renderer-background
 youtube.com##div:has-text(Try YouTube TV for free)
+youtube.com##.ytd-popup-container:has(ytd-single-option-survey-renderer)
+! unbreak youtube channel icons
+||googleusercontent.com^$3p,badfilter
+||googleusercontent.com^$3p,domain=~youtube.com
 
 ! https://gitlab.com/xuhaiyang1234/AAK-Cont/issues/340
 ! The following two rules applies (block ads) when images from the domain are not blocked
@@ -84,10 +95,12 @@ k2nblog.com##.wpgdprc-consent-bar
 k2nblog.com###wpgdprc-consent-modal
 
 ||animenova.*/frontend/all.js$script
-animenova.*##+js(abort-current-inline-script.js, beacon)
+!animenova.*##+js(abort-current-inline-script.js, beacon)
+animenova.*##+js(acis, beacon)
 
 ! https://github.com/reek/anti-adblock-killer/issues/4092
-overclockers.ru##+js(setTimeout-defuser.js, (), 15000)
+!overclockers.ru##+js(setTimeout-defuser.js, (), 15000)
+overclockers.ru##+js(nostif, (), 15000)
 
 ! Blocks popups
 ||estream.*/script.js^$script
@@ -107,26 +120,22 @@ mangahere.*##.MHShuffleAd
 myanimelist.net##.root
 
 ! Stops popunders
-nhentai.net##+js(addEventListener-defuser.js, DOMContentLoaded, N.advertising)
+!nhentai.net##+js(addEventListener-defuser.js, DOMContentLoaded, N.advertising)
+nhentai.net##+js(aeld, DOMContentLoaded, N.advertising)
 
 @@||apple.com^$generichide
 
-rapidvideo.com##+js(set-constant.js, exitpopup, noopFunc)
+!rapidvideo.com##+js(set-constant.js, exitpopup, noopFunc)
+rapidvideo.com##+js(set, exitpopup, noopFunc)
 
 microsoft.com###email-newsletter-dialog
 
 newegg.com###popUpExitSurvey_Content
 newegg.com##.row-side-banners
 
-www.youtube.com##.ytd-popup-container:has(ytd-single-option-survey-renderer)
-
 wetv.vip##.txp-watermark
 wetv.vip##.play_dl_float
 wetv.vip##.fy_qc_btn
-
-! unbreak youtube channel icons
-||googleusercontent.com^$3p,badfilter
-||googleusercontent.com^$3p,domain=~youtube.com
 
 
 ! -&- Generic filters -&-
