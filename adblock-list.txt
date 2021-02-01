@@ -1,8 +1,8 @@
 [uBlock Origin 1.32.0]
 ! Title: NeoISE's Filters
 ! Author: NeoISE (Maniroth Ouk)
-! Version: 202101112205
-! Last modified: 2021-01-11 22:05 UTC
+! Version: 202102012145
+! Last modified: 2021-02-01 21:45 UTC
 ! Expires: 3 days
 ! Homepage: https://github.com/NeoISE/adblist
 ! Support: https://github.com/NeoISE/adblist/issues
@@ -144,6 +144,9 @@ mgtv.com##.app-download
 
 iq.com###__next .popup-container
 iq.com##.qrcode-wrap
+iq.com##.iqp-logo-box
+
+netgear.com##.fade
 
 
 ! -&- Generic filters -&-
